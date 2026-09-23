@@ -90,3 +90,20 @@ pandas==3.0.6
 python-dateutil==2.9.0.post0
 requests==2.x.x
 ...
+
+
+COMANDOS DO Git
+
+git status (vai aparecer em vermelho as alterações dos arquivos)
+
+git add . (. é adicionar tudo , porem voce pode adicionar os nome dos arvuios modificados um a um)
+
+git commit -m "nome do commit"
+
+(se pedir)
+git config --local user.name "yure5995"
+git config --local user.email "contatoyurefernandes@gmail.com"
+
+git push -u origin main
+
+para atualizar sua branch (git pull)
