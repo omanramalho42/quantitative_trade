@@ -1,0 +1,92 @@
+cd C:\Users\anacr\WebstormProjects\python
+
+python -m venv .venv
+
+.venv\Scripts\activate
+
+pip install pandas
+
+Para sair
+deactivate
+
+E volta ao Python global.
+
+6. Crie seu primeiro arquivo
+meu-projeto/
+├── .venv/
+├── main.py
+└── requirements.txt
+
+main.py:
+
+print("Olá, mundo!")
+
+Execute:
+
+python main.py
+7. Salve as dependências
+
+Depois de instalar tudo:
+
+pip freeze > requirements.txt
+
+Vai gerar algo parecido com:
+
+numpy==2.5.3
+pandas==3.0.6
+...
+
+Outra pessoa pode recriar o ambiente com:
+
+pip install -r requirements.txt
+⚙️ E no WebStorm
+
+Abra a pasta meu-projeto no WebStorm e configure o interpretador para:
+
+meu-projeto\.venv\Scripts\python.exe
+
+Assim o WebStorm sabe que esse projeto usa o Python da .venv, e não o Python global.
+
+Estrutura que eu recomendo para começar:
+
+meu-projeto/
+│
+├── .venv/              ← ambiente Python (não vai para o Git)
+├── src/                ← código
+│   └── main.py
+├── tests/              ← testes
+├── .gitignore
+├── requirements.txt
+└── README.md
+
+Se você me disser o que pretende fazer com Python (API, IA, automação, análise de dados, web scraping etc.), eu monto a estrutura inicial já adequada ao projeto.
+
+Simples, mano. Se você estiver com a .venv ativada:
+
+pip install nome-da-lib
+
+Depois atualize o requirements.txt:
+
+pip freeze > requirements.txt
+Exemplo
+
+Você já tem:
+
+pandas
+numpy
+
+E quer adicionar requests:
+
+pip install requests
+
+Depois:
+
+pip freeze > requirements.txt
+
+Seu requirements.txt será atualizado com as versões instaladas:
+
+numpy==2.5.3
+pandas==3.0.6
+python-dateutil==2.9.0.post0
+requests==2.x.x
+...
