@@ -106,4 +106,4 @@ git config --local user.email "contatoyurefernandes@gmail.com"
 
 git push -u origin main
 
-para atualizar sua branch (git pull)
+para atualizar sua branch (git pull).
