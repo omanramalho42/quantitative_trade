@@ -1,0 +1,7 @@
+pyproject.toml
+main/main.py
+quantitative_trader.egg-info/PKG-INFO
+quantitative_trader.egg-info/SOURCES.txt
+quantitative_trader.egg-info/dependency_links.txt
+quantitative_trader.egg-info/entry_points.txt
+quantitative_trader.egg-info/top_level.txt
